@@ -9,47 +9,58 @@ export function TechnicalDetails() {
         <h3 className="text-xl font-semibold mb-4">Hardware Components</h3>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
-            {
-              name: "Arduino Mega",
-              description: "Main controller for complex sound generation nodes",
-              quantity: 3,
-            },
-            {
-              name: "Arduino Nano",
-              description: "Compact controllers for satellite sound units",
-              quantity: 5,
-            },
-            {
-              name: "Adafruit Music Maker Shield",
-              description: "Digital audio generation and processing",
-              quantity: 3,
-            },
-            {
-              name: "Custom PCBs",
-              description: "Purpose-built circuit boards for specific sound functions",
-              quantity: 8,
-            },
-            {
-              name: "Piezo Sensors",
-              description: "Vibration and touch detection for interaction",
-              quantity: 12,
-            },
-            {
-              name: "Photoresistors",
-              description: "Light-based interaction sensors",
-              quantity: 10,
-            },
-            {
-              name: "Speakers (various sizes)",
-              description: "Sound output devices distributed throughout the space",
-              quantity: 15,
-            },
-            {
-              name: "Amplifier Modules",
-              description: "Signal boosting for audio output",
-              quantity: 8,
-            },
-          ].map((component, index) => (
+  {
+    "name": "Arduino Uno R3",
+    "description": "Main controller units for interactive sound nodes",
+    "quantity": 2
+  },
+  {
+    "name": "Adafruit Music Maker Shield",
+    "description": "Digital audio generation and processing (paired with Uno)",
+    "quantity": 2
+  },
+  {
+    "name": "Amplifier Modules",
+    "description": "Boosts audio signal from Music Maker Shield (paired with speakers and switches)",
+    "quantity": 2
+  },
+  {
+    "name": "Speakers (various sizes)",
+    "description": "Output devices for sound playback, integrated with amplifier modules",
+    "quantity": 2
+  },
+  {
+    "name": "Switches",
+    "description": "Physical interface for toggling sound modules",
+    "quantity": 2
+  },
+  {
+    "name": "Film Pressure Sensors",
+    "description": "Responsive to touch and pressure for triggering sound events",
+    "quantity": 2
+  },
+  {
+    "name": "Ultrasonic Sensors",
+    "description": "Distance sensing for interactive spatial triggers",
+    "quantity": 3
+  },
+  {
+    "name": "LED (Blue)",
+    "description": "Visual indicator for system state or user feedback",
+    "quantity": 1
+  },
+  {
+    "name": "LED (Green)",
+    "description": "Visual indicator for system state or user feedback",
+    "quantity": 1
+  },
+  {
+    "name": "Battery Packs",
+    "description": "Portable power supply for off-grid operation",
+    "quantity": 2
+  }
+]
+.map((component, index) => (
             <li key={index} className="flex justify-between p-3 bg-black/30 rounded-md">
               <div>
                 <h4 className="font-medium">{component.name}</h4>
@@ -63,10 +74,10 @@ export function TechnicalDetails() {
         </ul>
       </div>
 
-      <div className="bg-zinc-800/50 backdrop-blur-sm rounded-lg p-6 border border-zinc-700">
+      {/* <div className="bg-zinc-800/50 backdrop-blur-sm rounded-lg p-6 border border-zinc-700">
         <h3 className="text-xl font-semibold mb-4">Circuit Design</h3>
         <CircuitDiagram />
-      </div>
+      </div> */}
 
       <Accordion
         type="single"

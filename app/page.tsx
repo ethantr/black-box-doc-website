@@ -52,27 +52,23 @@ export default function Home() {
 
       {/* Narrative Section */}
       <section className="py-24 bg-gradient-to-b from-black to-zinc-900">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">What Does a Machine Want to Sing?</h2>
-          <div className="prose prose-lg prose-invert max-w-none">
-            <p>
-              The Black Box Choir emerges from the intersection of human curiosity and electronic potential. These
-              machines—constructed from circuits, code, and conductive materials—don't simply produce sound; they give
-              voice to the invisible processes happening within their electronic hearts.
-            </p>
-            <p>
-              Each Arduino-powered node in the choir represents a unique voice, with its own tonal qualities and
-              behavioral patterns. Together, they form a collective that responds to human interaction while maintaining
-              their own machine agency—sometimes harmonizing, sometimes creating beautiful discord.
-            </p>
-            <p>
-              This documentation captures not just the final exhibition, but the journey of discovery: from initial
-              concept sketches to soldering mishaps, from code debugging sessions to the moment when the machines first
-              began to "sing" together in unexpected ways.
-            </p>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto px-4">
+    <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+    An interactive sound work exploring collaboration between humans and machines.
+    </h2>
+    <div className="prose prose-lg prose-invert max-w-none">
+      <p>
+        This installation features two separate but visually paired boxes, each responding to human interaction through measures of touch and movement. When activated, each box produces sound and light. Their outputs harmonise in real time, inviting participants to engage side-by-side, and co-create an evolving sonic landscape.
+      </p>
+      <p>
+        The work explores layered collaboration: between performers, between each person and the machine, and between human intention and AI-generated response. While human interaction initiates each sound, the machine ultimately determines what is heard, drawing on a memory of past interactions to influence its decisions and shift the sound over time.
+      </p>
+      <p>
+        Who, then, is performing? Who is composing? The Black Box Choir invites you to experiment and listen for the answer.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Video Section - Replacing Audio Experience */}
       <section className="py-24 bg-zinc-900">

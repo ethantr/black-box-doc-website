@@ -150,7 +150,7 @@ export function VideoSection() {
         title="Black Box Choir"
         description="In action..."
         videoSrc="Example vid.mp4"
-        posterSrc="/placeholder.svg?height=720&width=1280"
+        // posterSrc="/placeholder.svg?height=720&width=1280"
       />
 
     </div>

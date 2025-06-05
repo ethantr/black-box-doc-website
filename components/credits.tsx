@@ -6,25 +6,25 @@ export function Credits() {
         <ul className="space-y-4">
           {[
             {
-              name: "Ethan Teber-Rossi",
-              role: "Software Engineer and Sound Designer",
-              bio: "Sound artist and electronic musician with a background in experimental composition and circuit bending.",
+              "name": "Ethan Teber-Rossi",
+              "role": "Software and Sound Designer",
+              "bio": "Worked on music system design, custom software, and circuit development for interactive sound behaviours."
             },
             {
-              name: "Kira Jackson",
-              role: "Creative Designer",
-              bio: "Electronics engineer specializing in audio circuits and embedded systems for interactive installations.",
+              "name": "Darcy Gilbert",
+              "role": "Software and Sound Designer",
+              "bio": "Contributed to software architecture, audio interaction design, and building the embedded circuit systems."
             },
             {
-              name: "Darcy Gilbert",
-              role: "Software Engineer and Sound Designer",
-              bio: "Creative coder working at the intersection of music, technology, and interactive art.",
+              "name": "Kira Jackson",
+              "role": "Creative and Physical Designer",
+              "bio": "Led the creative direction and was responsible for the design and construction of the physical enclosures."
             },
             {
-              name: "Fiona Chu",
-              role: "Designer",
-              bio: "Spatial designer with experience in creating immersive environments for sound and media art.",
-            },
+              "name": "Fiona Chu",
+              "role": "Creative and Physical Designer",
+              "bio": "Focused on visual and spatial design, and co-developed the physical housing for the installation."
+            }
           ].map((person, index) => (
             <li key={index} className="border-l-2 border-purple-500 pl-4">
               <h4 className="font-semibold text-lg">{person.name}</h4>
@@ -52,7 +52,7 @@ export function Credits() {
           </ul>
         </div>
 
-        <div className="bg-zinc-800/50 backdrop-blur-sm rounded-lg p-6 border border-zinc-700">
+        {/* <div className="bg-zinc-800/50 backdrop-blur-sm rounded-lg p-6 border border-zinc-700">
           <h3 className="text-xl font-semibold mb-4">Tools & Technologies</h3>
           <div className="grid grid-cols-2 gap-3">
             {[
@@ -70,7 +70,7 @@ export function Credits() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="md:col-span-2 bg-zinc-800/50 backdrop-blur-sm rounded-lg p-6 border border-zinc-700">
