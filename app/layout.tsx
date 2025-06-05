@@ -2,9 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'The Black Box Choir',
+  description: 'The Black Box Choir is an experimental sound installation that explores the intersection of technology, music, and human interaction',
 }
 
 export default function RootLayout({

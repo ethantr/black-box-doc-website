@@ -7,35 +7,35 @@ import { cn } from "@/lib/utils"
 
 const exhibitionImages = [
   {
-    src: "/placeholder.svg?height=600&width=800",
-    alt: "Exhibition overview showing multiple black box units arranged in the gallery space",
-    caption: "Black Box Choir installation view",
+    src: "/boxes at sunset.jpg?height=600&width=800",
+    alt: "Black Box Choir exhibition at sunset with ambient lighting",
+    caption: "Black Box Choir exhibition at sunset",
   },
   {
     src: "/Kira box ETR 2.jpg?height=600&width=800",
     alt: "Close-up of an Arduino-based sound module with exposed circuitry",
     caption: "Node #3: 'Oscillator Prime'",
   },
+  // {
+  //   src: "/placeholder.svg?height=600&width=800",
+  //   alt: "Visitor interacting with the sound interface through touch sensors",
+  //   caption: "Interactive sound exploration",
+  // },
+  // {
+  //   src: "/placeholder.svg?height=600&width=800",
+  //   alt: "Projection mapping on the wall showing circuit diagrams and sound waves",
+  //   caption: "Visual accompaniment to the sonic experience",
+  // },
   {
-    src: "/placeholder.svg?height=600&width=800",
-    alt: "Visitor interacting with the sound interface through touch sensors",
-    caption: "Interactive sound exploration",
-  },
-  {
-    src: "/placeholder.svg?height=600&width=800",
-    alt: "Projection mapping on the wall showing circuit diagrams and sound waves",
-    caption: "Visual accompaniment to the sonic experience",
-  },
-  {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/making box.jpeg?height=600&width=800",
     alt: "Detail of custom PCB with components and connections",
     caption: "Custom circuit board design",
   },
-  {
-    src: "/placeholder.svg?height=600&width=800",
-    alt: "Wide shot of the exhibition space during a performance",
-    caption: "Live performance with the Black Box Choir",
-  },
+  // {
+  //   src: "/placeholder.svg?height=600&width=800",
+  //   alt: "Wide shot of the exhibition space during a performance",
+  //   caption: "Live performance with the Black Box Choir",
+  // },
 ]
 
 export function ExhibitionGallery() {

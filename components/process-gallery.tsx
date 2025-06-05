@@ -29,8 +29,8 @@ const processCategories = [
     label: "Prototyping",
     items: [
       {
-        src: "/placeholder.svg?height=500&width=700",
-        alt: "Breadboard with Arduino and components",
+        src: "/prototype.PNG?height=500&width=700",
+        alt: "",
         caption: "First working prototype",
       },
       {
