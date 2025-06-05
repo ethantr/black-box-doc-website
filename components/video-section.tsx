@@ -147,9 +147,9 @@ export function VideoSection() {
   return (
     <div className="space-y-8">
       <VideoPlayer
-        title="Black Box Choir: Exhibition Overview"
-        description="A walkthrough of the exhibition space showing the choir in action and visitor interactions"
-        videoSrc="/videos/exhibition-overview.mp4"
+        title="Black Box Choir"
+        description="In action..."
+        videoSrc="Example vid.mp4"
         posterSrc="/placeholder.svg?height=720&width=1280"
       />
 
