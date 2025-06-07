@@ -13,8 +13,8 @@ const exhibitionImages = [
   },
   {
     src: "/Kira box ETR 2.jpg?height=600&width=800",
-    alt: "Close-up of an Arduino-based sound module with exposed circuitry",
-    caption: "Node #3: 'Oscillator Prime'",
+    alt: "Final testing of tactile box",
+    caption: "Final testing of tactile box",
   },
   // {
   //   src: "/placeholder.svg?height=600&width=800",
@@ -28,8 +28,8 @@ const exhibitionImages = [
   // },
   {
     src: "/making box.jpeg?height=600&width=800",
-    alt: "Detail of custom PCB with components and connections",
-    caption: "Custom circuit board design",
+    alt: "Tactile box development",
+    caption: "Tactile box development",
   },
   // {
   //   src: "/placeholder.svg?height=600&width=800",

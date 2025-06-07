@@ -5,43 +5,23 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 const processCategories = [
   {
     id: "sketches",
-    label: "Initial Sketches",
+    label: "Preliminary Sketches & Prototyping",
     items: [
       {
         src: "/sketch1.PNG?height=500&width=700",
-        alt: "Hand-drawn circuit diagram with notes",
-        caption: "Early circuit design concepts",
+        alt: "Hand drawn sketches showing shapes and mood",
+        caption: "Early box design concepts",
       },
-      {
-        src: "/placeholder.svg?height=500&width=700",
-        alt: "Sketch of the exhibition layout",
-        caption: "Spatial arrangement planning",
-      },
-      {
-        src: "/sketch 2.PNG?height=500&width=700",
-        alt: "Brainstorming sketches",
-        caption: "Design sketches",
-      },
-    ],
-  },
-  {
-    id: "prototyping",
-    label: "Prototyping",
-    items: [
       {
         src: "/prototype.PNG?height=500&width=700",
-        alt: "",
+        alt: "Cardboard and baking paper box with ultrasonic sensor, connected to Ableton Live for sound generation",
         caption: "First working prototype",
       },
-      {
-        src: "/placeholder.svg?height=500&width=700",
-        alt: "Testing different sensors",
-        caption: "Sensor comparison tests",
-      },
+
       {
         src: "/sketch 2.PNG?height=500&width=700",
-        alt: "Brainstorming sketches",
-        caption: "",
+        alt: "Conceptialising interactions, circuits, sensor placement",
+        caption: "Design sketches",
       },
     ],
   },
@@ -50,19 +30,19 @@ const processCategories = [
     label: "Design and Development",
     items: [
       {
+        src: "/Constructing tactile box 1.jpeg?height=500&width=700",
+        alt: "Using straws, cloth and hot glue to build tacile box skeleton",
+        caption: "Initial Structure Design",
+      },
+      {
         src: "/electronics ETR.jpg?height=500&width=700",
-        alt: "Screenshot of Arduino code",
-        caption: "Core sound generation algorithm",
+        alt: "Including pressure sensors, speakers, Arduino with Adafruit Music Shield within base of box",
+        caption: "Circuit for tactile box",
       },
       {
         src: "/8CDA4346-E591-4F33-BD98-108C843839B2.jpg",
-        alt: "Building box structure",
-        caption: "Building box structure",
-      },
-      {
-        src: "/placeholder.svg?height=500&width=700",
-        alt: "Whiteboard with system architecture",
-        caption: "System architecture planning",
+        alt: "Adding cloth and structural components to motion box",
+        caption: "Developing motion box",
       },
     ],
   },
@@ -71,19 +51,19 @@ const processCategories = [
     label: "Final Assembly",
     items: [
       {
-        src: "/electronics ETR.jpg?height=500&width=700",
-        alt: "Soldering components to PCB",
-        caption: "Permanent circuit assembly",
+        src: "/darcy with box.png?height=500&width=700",
+        alt: "Testing and wiring the boxes",
+        caption: "Preparing the blue motion box",
       },
       {
-        src: "/placeholder.svg?height=500&width=700",
-        alt: "Enclosure construction",
-        caption: "Building the 'black boxes'",
+        src: "/boxes together.jpg?height=500&width=700",
+        alt: "A tactile box and a motion box side by side",
+        caption: "Two paired boxes invite collaboration",
       },
       {
-        src: "/placeholder.svg?height=500&width=700",
-        alt: "Final testing before exhibition",
-        caption: "System integration testing",
+        src: "/using the boxes.png?height=500&width=700",
+        alt: "Two performers collaborating to generate sound and light",
+        caption: "Performing with the boxes",
       },
     ],
   },
@@ -92,7 +72,7 @@ const processCategories = [
 export function ProcessGallery() {
   return (
     <Tabs defaultValue="sketches" className="w-full">
-      <TabsList className="grid grid-cols-2 md:grid-cols-4 bg-zinc-800/50 rounded-lg p-1 mb-8">
+      <TabsList className="grid grid-cols-2 md:grid-cols-3 bg-zinc-800/50 rounded-lg p-1 mb-8">
         {processCategories.map((category) => (
           <TabsTrigger key={category.id} value={category.id} className="data-[state=active]:bg-zinc-700">
             {category.label}
