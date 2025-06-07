@@ -143,15 +143,31 @@ export function VideoPlayer({ title, description, videoSrc, posterSrc }: VideoPl
   )
 }
 
+export function YouTubePlayer({ videoId, title }: { videoId: string; title?: string }) {
+  return (
+    <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&showinfo=0`}
+        title={title || "YouTube video player"}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  )
+}
+
+
 export function VideoSection() {
   return (
     <div className="space-y-8">
-      <VideoPlayer
+      {/* <VideoPlayer
         title="Black Box Choir"
         description="In action..."
         videoSrc="Example vid.mp4"
         // posterSrc="/placeholder.svg?height=720&width=1280"
-      />
+      /> */}
+      <YouTubePlayer videoId="TwnNRcM9Sys" title="The Black Box Choir - An interactive sound work exploring collaboration between humans and machines" />
 
     </div>
   )
