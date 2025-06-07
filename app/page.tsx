@@ -57,13 +57,13 @@ export default function Home() {
     An interactive sound work exploring collaboration between humans and machines.
     </h2>
     <div className="prose prose-lg prose-invert max-w-none">
-      <p>
+      <p className="mb-6">
         This installation features two separate but visually paired boxes, each responding to human interaction through measures of touch and movement. When activated, each box produces sound and light. Their outputs harmonise in real time, inviting participants to engage side-by-side, and co-create an evolving sonic landscape.
       </p>
-      <p>
+      <p className="mb-6">
         The work explores layered collaboration: between performers, between each person and the machine, and between human intention and AI-generated response. While human interaction initiates each sound, the machine ultimately determines what is heard, drawing on a memory of past interactions to influence its decisions and shift the sound over time.
       </p>
-      <p>
+      <p className="mb-6">
         Who, then, is performing? Who is composing? The Black Box Choir invites you to experiment and listen for the answer.
       </p>
     </div>
